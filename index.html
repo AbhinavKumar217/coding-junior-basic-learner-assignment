@@ -93,9 +93,9 @@
             </audio> -->
           </div>
 
-          <div id="courseOverview" class="mt-4">
-            <h4>1.1: Course Overview</h4>
-            <p>This section provides an overview of the course content...</p>
+          <div class="mt-4">
+            <h4 id="courseOverviewTitle">1.1: Course Overview</h4>
+            <p id="courseOverview">This section provides an overview of the course content...</p>
           </div>
 
           <!-- Progress Bar -->
@@ -136,6 +136,7 @@
             document.getElementById("navBlog").innerText = "Blog";
             document.getElementById("sectionHeading").innerText =
               "Section 1: Introduction";
+            document.getElementById("courseOverviewTitle").innerText = "1.1: Course Overview";
             break;
           case "es":
             document.getElementById("courseOverview").innerHTML =
@@ -147,7 +148,8 @@
             document.getElementById("navBlog").innerText = "Blog";
             document.getElementById("sectionHeading").innerText =
               "Sección 1: Introducción";
-            break;
+              document.getElementById("courseOverviewTitle").innerText = "1.1: Resumen del curso";
+              break;
           case "fr":
             document.getElementById("courseOverview").innerHTML =
               "Cette section fournit un aperçu du contenu du cours...";
@@ -158,7 +160,8 @@
             document.getElementById("navBlog").innerText = "Blog";
             document.getElementById("sectionHeading").innerText =
               "Section 1: Introduction";
-            break;
+              document.getElementById("courseOverviewTitle").innerText = "1.1: Aperçu du cours";
+              break;
           case "de":
             document.getElementById("courseOverview").innerHTML =
               "Dieser Abschnitt bietet einen Überblick über den Kursinhalt...";
@@ -168,7 +171,8 @@
             document.getElementById("navBlog").innerText = "Blog";
             document.getElementById("sectionHeading").innerText =
               "Abschnitt 1: Einführung";
-            break;
+              document.getElementById("courseOverviewTitle").innerText = "1.1: Kursüberblick";
+              break;
           default:
             console.log("Unknown language");
         }
