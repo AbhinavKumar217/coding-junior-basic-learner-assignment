@@ -70,13 +70,11 @@
         </div>
 
         <!-- Main Content Area -->
-        <!-- Inside the Main Content Area -->
         <div class="col-md-9">
           <h2 id="sectionHeading">Section 1: Introduction</h2>
 
           <!-- Multimedia Player -->
           <div class="embed-responsive embed-responsive-16by9">
-            <!-- Video Player -->
             <video class="embed-responsive-item" controls>
               <source
                 src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
@@ -95,7 +93,6 @@
             </audio> -->
           </div>
 
-          <!-- Subsections -->
           <div id="courseOverview" class="mt-4">
             <h4>1.1: Course Overview</h4>
             <p>This section provides an overview of the course content...</p>
@@ -130,7 +127,6 @@
         // Placeholder logic for language change
         switch (selectedLanguage) {
           case "en":
-            // English language logic
             document.getElementById("courseOverview").innerHTML =
               "This section provides an overview of the course content...";
             document.getElementById("navbarBrand").innerText =
@@ -142,7 +138,6 @@
               "Section 1: Introduction";
             break;
           case "es":
-            // Español language logic
             document.getElementById("courseOverview").innerHTML =
               "Esta sección proporciona una descripción general del contenido del curso...";
             document.getElementById("navbarBrand").innerText =
@@ -154,7 +149,6 @@
               "Sección 1: Introducción";
             break;
           case "fr":
-            // Français language logic
             document.getElementById("courseOverview").innerHTML =
               "Cette section fournit un aperçu du contenu du cours...";
             document.getElementById("navbarBrand").innerText =
@@ -166,7 +160,6 @@
               "Section 1: Introduction";
             break;
           case "de":
-            // Deutsch language logic
             document.getElementById("courseOverview").innerHTML =
               "Dieser Abschnitt bietet einen Überblick über den Kursinhalt...";
             document.getElementById("navbarBrand").innerText = "Kursplattform";
